@@ -1,0 +1,48 @@
+.home_container {
+      position: absolute;
+      top: 120px;
+      margin: 20px;
+      width: 350px;
+      padding: 20px;
+      background-color: rgb(129, 142, 172);
+      margin: 0 auto;
+right:auto;     
+left: auto;
+bottom: auto;
+border-style: solid;
+
+    }
+  
+   
+    input[type=text], input[type=password] ,input[type=email], input[type=text]{
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 10px 0;
+      border: none;
+      right: 0cm;
+      background: #f1f1f1;
+    }
+    
+    input[type=text]:focus, input[type=password]:focus ,input[type=email]:focus ,input[type=text]:focus{
+      background-color: #ddd;
+      outline: none;
+    }
+    
+    .login{
+        text-align: center;
+        color:rgb(6, 6, 63);
+    }
+    .btnG {
+      background-color: #04AA6D;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    
+   
+   
+  
+ 

@@ -1,0 +1,82 @@
+<nav class="navbar navbar-expand-lg navbar-dark " >
+  <div class="container-fluid">
+    <div class="col-lg-6 col-12 header_img"> 
+    <a class="navbar-brand" href="#" >Employee App</a>
+ 
+    </div>
+   
+  </div>
+</nav>
+
+<div class="bg-img">
+    <div class="container">
+        <div class="row">
+    <div class=" col-12 col-md-4"></div>
+    <div class=" col-12 col-md-4">
+        <form  [formGroup]="registerForm" (ngSubmit)="register()" class="home_container">
+          <h1 class="login">Register</h1>
+
+
+
+
+          
+          <div class="row">
+            <!-- <div class="col-lg-18"> -->
+                <div class="input-group">
+         
+        <div class="form-group col-md-5">
+
+          <input type="text" class="form-control" id="username" placeholder="Username" formControlName="username" name="username" >
+          <div  *ngIf="(registerForm.get('username')?.touched || registerForm.get('username')?.dirty) && registerForm.get('username')?.errors" class="error">Invalid Username</div>
+        </div>
+          <div class="form-group col-md-5">
+            <input type="email" class="form-control" id="email"  placeholder="Email" formControlName="email" name="email" >
+            <div  *ngIf="(registerForm.get('email')?.touched || registerForm.get('email')?.dirty) && registerForm.get('email')?.errors" class="error">Invalid Email ID</div>
+          </div>
+          <div class="form-group col-md-5">
+            <input type="password" class="form-control" id="password" placeholder="Password" formControlName="password" name="password">
+            <div  *ngIf="(registerForm.get('password')?.touched || registerForm.get('password')?.dirty) && registerForm.get('password')?.errors" class="error">Invalid Password</div>
+          </div>
+
+     
+
+          <div class="form-group col-md-5">
+            <input type="text" class="form-control" id="empid" placeholder="EmpID" formControlName="empid" name="empid" >
+            <div  *ngIf="(registerForm.get('empid')?.touched || registerForm.get('empid')?.dirty) && registerForm.get('empid')?.errors" class="error">Invalid Employement ID</div>
+          </div>
+
+          <div class="form-group col-md-5">
+            <input type="text" class="form-control" id="name" placeholder="Name" formControlName="name" name="name" >
+            <div  *ngIf="(registerForm.get('name')?.touched || registerForm.get('name')?.dirty) && registerForm.get('name')?.errors" class="error">Invalid Name</div>
+          </div>
+
+          <div class="form-group col-md-5">
+            <input type="text" class="form-control" id="number" placeholder="Mobile Number" formControlName="number" name="number" >
+            <div  *ngIf="(registerForm.get('number')?.touched || registerForm.get('number')?.dirty) && registerForm.get('number')?.errors" class="error">Invalid Number</div>
+          </div>
+
+          <div class="form-group col-md-5">
+            <input type="text" class="form-control" id="designation" placeholder="Designation" formControlName="designation" name="designation" >
+            <div  *ngIf="(registerForm.get('designation')?.touched || registerForm.get('designation')?.dirty) && registerForm.get('designation')?.errors" class="error">Invalid</div>
+          </div>
+
+          <div class="form-group col-md-5">
+            <input type="text" class="form-control" id="address" placeholder="Address" formControlName="address" name="address" >
+            <div  *ngIf="(registerForm.get('address')?.touched || registerForm.get('address')?.dirty) && registerForm.get('address')?.errors" class="error">Invalid </div>
+          </div>
+
+
+        <!-- </div> -->
+      </div>
+      </div>
+      
+
+
+          <button type="submit" class="btnG">Register</button>
+          <div class="forgot"><a href="#">Login</a> </div>
+        </form>
+      </div>
+      <div class=" col-12 col-md-4" ></div>
+      </div>
+      </div>
+      </div>
